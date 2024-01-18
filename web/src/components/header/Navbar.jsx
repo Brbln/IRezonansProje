@@ -22,7 +22,18 @@ const Navbar = () => {
                                 <Link to='/hakkimizda/'>HAKKIMIZDA</Link>
                             </li>
                             <li>
-                                <Link to='/hizmetlerimiz/'>HİZMETLERİMİZ</Link>                                
+                                <div className="dropdown">
+                                <Link to='/hizmetlerimiz/'>HİZMETLERİMİZ <i className="fas fa-caret-down" /></Link>   
+                                <div className="d_content">
+                                    <Link to='/hizmetlerimiz/istah-kapama'> İştah Kapama</Link>
+                                    <Link to='/hizmetlerimiz/gida-silme'>Gıda Silme</Link>
+                                    <Link to='/hizmetlerimiz/sigara-birakma'>Sigara Bırakma</Link>
+                                </div>
+                                </div>
+                                                             
+                            </li>
+                            <li>
+                                <Link to='/Blog/'>BİZDENE GÖRÜNTÜLER</Link>
                             </li>
                             <li>
                                 <Link to='/iletişim/'>İLETİŞİM</Link>

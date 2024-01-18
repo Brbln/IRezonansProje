@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Home from './components/Home';
+import Home from './components/mainPage/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from "./components/header/Header";
-import Content from './components/Content';
-import Services from './components/Services';
-import Slider from './components/Slider';
+import Content from './components/mainPage/Content';
+import Services from './components/mainPage/Services';
+import Slider from './components/mainPage/Slider';
 
 function App() {
   return (

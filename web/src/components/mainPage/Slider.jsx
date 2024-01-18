@@ -5,9 +5,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import img from "./images/slider/2.jpg";
-import img1 from "./images/slider/1.jpg";
-import img2 from "./images/slider/3.jpg";
+import img from "../images/slider/2.jpg";
+import img1 from "../images/slider/1.jpg";
+import img2 from "../images/slider/3.jpg";
 
 const Slider = () => {
 

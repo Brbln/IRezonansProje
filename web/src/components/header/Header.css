@@ -1,81 +1,124 @@
 /* -----------------Head---------------- */
 .head {
-    background: rgb(253, 240, 228);
-    padding: 5px 0;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 5px;
-  }  
-  .head i {
-    color: rgb(0, 0, 0, 0.7);
-    margin-left: 40px;
-  }  
-  .head label {    
-    margin-left: 5px;
-    font-size: 13px;
-  }
-  .head i:hover{
-    background-image: linear-gradient(to left, #ff3833 , #ff6141, #ff884b);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    transition: 0.1s;
-
-  }
-  /* -----------------head---------------- */
-  /* -----------------navbar---------------- */
-  .navbar {
-    background: linear-gradient(to left,  #ff3833, #ff6141, #ff884b);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 0;
-  }  
-  .navlink {
-    text-align: right;
-  }  
-  .toggle {
-    display: none;
-  }
-  
-  .navlink ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px 0;
-    padding-right: 60px;
-    position: static;
-  }
-  
-  .navlink ul li a {
-    font-size: 17px;
-    text-decoration: none;
-    color: #fff;
-    
-    /* color: rgb(0, 0, 0, 0.8); */
-    /* background-image: linear-gradient(to left, #ff3833 , #ff6141, #ff884b);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; */
-  }
-  
-  .navlink ul li a:hover {
-    color:rgb(0, 0, 0, 0.7); 
-  }
-  .navlink ul li a::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background:rgb(0, 0, 0, 0.7);
-    display: block;
-    margin:auto;
-    transition: 0.3s;
+  background: rgb(253, 240, 228);
+  padding: 5px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
 }
-.navlink ul li a:hover::after{
+
+.head i{
+  color: rgb(0, 0, 0, 0.7);
+  margin-left: 40px;
+}
+
+.head label{
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+.head i:hover {
+  background-image: linear-gradient(to left, #ff3833, #ff6141, #ff884b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: 0.1s;
+}
+
+/* -----------------head---------------- */
+/* -----------------navbar---------------- */
+.navbar {
+  background: linear-gradient(to left, #ff3833, #ff6141, #ff884b);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0;
+}
+
+.toggle {
+  display: none;
+}
+
+.navlink ul {
+  padding-right: 16px;
+}
+
+.navlink ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 0;
+  padding-right: 45px;
+  position: static;
+}
+
+.navlink ul li a {
+  font-size: 17px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navlink ul li a:hover {
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.navlink ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: rgb(0, 0, 0, 0.7);
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.navlink ul li a:hover::after {
   width: 100%;
 }
+
 .navbar .width {
   width: 180px;
   height: 185px;
-  margin-left:35px ;
+  margin-left: 35px;
 }
+
 .navbar .width img {
-    width: 100%;
+  width: 100%;
 }
-  /* -----------------navbar---------------- */
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+.d_content {
+  width: 200px;
+  display: none;
+  position: absolute;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  text-align: left;
+}
+
+.dropdown:hover .d_content {
+  display: block;
+  background-color: #ff6141; 
+  ;
+}
+.dropdown:hover .d_content a{
+  padding: 15px;
+  font-size: 15px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+.dropdown:hover .d_content a:hover{
+  color:rgb(0, 0, 0, 0.8);
+}
+.dropdown:hover .d_content a::after{
+  background-color: #ff6141;
+}
+.d_content a{
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* -----------------navbar---------------- */

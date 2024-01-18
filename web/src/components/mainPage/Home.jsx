@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 import "./Home.css"
-import Content from "./Content";
-import Services from "./Services";
+import Content from "./Content"
+import Services from "./Services"
 
 const Home = () =>{
     return(
