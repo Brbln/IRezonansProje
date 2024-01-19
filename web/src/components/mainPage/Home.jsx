@@ -1,13 +1,13 @@
 import React from "react"
 import "./Home.css"
-import Content from "./Content"
+import About from "./About"
 import Services from "./Services"
 
 const Home = () =>{
     return(
         <>
         <section className="home">
-          <Content />
+          <About />
           <Services />
         </section>
         </>
