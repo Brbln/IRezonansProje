@@ -4,7 +4,6 @@ import Home from './components/mainPage/Home';
 import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
 import Header from "./components/header/Header";
 import About from './components/mainPage/About';
-import Services from './components/mainPage/Services';
 import Slider from './components/mainPage/Slider';
 import ContactUs from './components/ContactUs';
 import MServices from './components/services/MServices';

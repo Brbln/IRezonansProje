@@ -7,7 +7,6 @@ const Header2 = ({ customHeader }) => {
     <>
       <div className="nav">
         <img className='img' src={img} alt="" />
-        <div className='class'></div>
         <h2>{customHeader || 'İletişim'}</h2>
       </div>
     </>
