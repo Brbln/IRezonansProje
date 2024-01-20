@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom'
 import img from "../images/slider/2.jpg"
 import img1 from "../images/slider/1.jpg"
 import img3 from "../images/slider/3.jpg"
+import Header2 from './Header2'
 
 export const Services = () => {
     return (
-        <><div className="services container">
+        <>
+        <div className="services container">
             <h1 className='header'>Hizmetlerimiz </h1>
             <div className="text parag">
                 <div className="s_box">

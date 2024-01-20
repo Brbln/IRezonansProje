@@ -1,11 +1,11 @@
 import React from 'react'
 import img from "../images/slider/3.jpg"
+import Header2 from './Header2'
 
 export const About = () => {
   return (
     <>
       <div className="about">
-        {/* <img src={img} alt="" /> */}
         <div className="container">
           <h1 className='header'>İlkadım Zayıflama & Rezonans</h1>
           <div className="text">
@@ -28,7 +28,7 @@ export const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>  
     </>
   )
 }
