@@ -9,6 +9,7 @@ import MServices from './components/services/MServices';
 import MTemplate from './components/services/MTemplate';
 import AboutPage from './components/AboutPage';
 import Blog from './components/Blog';
+import SService from './components/services/SService';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
           <Route path="/hizmetlerimiz" exact component={MServices} />
           <Route path="/iletisim" exact component={ContactUs} />
           <Route path="/Blog" exact render={() => <Blog customHeader="Bizden Görüntüler"/>}/>
-          <Route path="/hizmetlerimiz/gida-silme" exact render={() => <MTemplate template="Gıda Silme"/>} />
+          <Route path="/hizmetlerimiz/gida-silme" exact component={SService}/>
           <Route path="/hizmetlerimiz/istah-kapama" exact render={() => <MTemplate template="İştah Kapama"/>} />
           <Route path="/hizmetlerimiz/sigara-birakma" exact render={() => <MTemplate template="Sigara bırakma"/>} />
         </Switch>

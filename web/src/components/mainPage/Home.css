@@ -123,6 +123,16 @@
   border: none;
   padding: 10px 0;
 }
+/* ------------------SService----------------- */
+.service p{
+  margin: 10px 0;
+}
+.service .phead{
+  margin: 20px 0;
+  font-size: 25px;
+  text-align: left;
+  color:rgba(0, 0, 0, 0.9);
+}
 /* ----------------Header2------------------- */
 .nav .img {
   display: block;
