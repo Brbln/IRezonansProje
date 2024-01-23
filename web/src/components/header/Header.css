@@ -6,12 +6,12 @@
   padding-bottom: 5px;
 }
 
-.head i{
+.head i {
   color: rgb(0, 0, 0, 0.7);
   margin-left: 40px;
 }
 
-.head label{
+.head label {
   margin-left: 5px;
   font-size: 13px;
 }
@@ -99,21 +99,24 @@
 
 .dropdown:hover .d_content {
   display: block;
-  background-color: #ff6141; 
-  ;
+  background-color: #ff6141;
 }
-.dropdown:hover .d_content a{
+
+.dropdown:hover .d_content a {
   padding: 15px;
   font-size: 15px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
-.dropdown:hover .d_content a:hover{
-  color:rgb(0, 0, 0, 0.8);
+
+.dropdown:hover .d_content a:hover {
+  color: rgb(0, 0, 0, 0.8);
 }
-.dropdown:hover .d_content a::after{
+
+.dropdown:hover .d_content a::after {
   background-color: #ff6141;
 }
-.d_content a{
+
+.d_content a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
