@@ -26,9 +26,9 @@ function App() {
           <Route path="/hizmetlerimiz" exact component={MServices} />
           <Route path="/iletisim" exact component={ContactUs} />
           <Route path="/Blog" exact render={() => <Blog customHeader="Bizden Görüntüler"/>}/>
-          <Route path="/hizmetlerimiz/gida-silme" exact component={SService}/>
-          <Route path="/hizmetlerimiz/istah-kapama" exact render={() => <MTemplate template="İştah Kapama"/>} />
-          <Route path="/hizmetlerimiz/sigara-birakma" exact render={() => <MTemplate template="Sigara bırakma"/>} />
+          <Route path="/hizmetlerimiz/gida-silme" exact  render={() => <SService header="Gıda Silme"/>} />
+          <Route path="/hizmetlerimiz/istah-kapama" exact render={() => <SService header="İştah Kapama"/>} />
+          <Route path="/hizmetlerimiz/sigara-birakma" exact render={() => <SService header="Sigara bırakma"/>} />
         </Switch>
       </Router>
     </>
