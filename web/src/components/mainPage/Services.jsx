@@ -32,8 +32,7 @@ export const Services = () => {
                             bir unsuru olarak karşımıza çıkar. Zayıflama, dengeli beslenme, düzenli egzersiz ve sağlıklı
                             alışkanlıkların bir kombinasyonunu içerir. Vücut ağırlığını kontrol etmek, genel sağlık durumunu
                             iyileştirebilir ve bir dizi olumlu etki yaratabilir
-                        </p>
-                        
+                        </p>                        
                         <Link to="/hizmetlerimiz/gida-silme">
                         <button className='button'>Devamını Oku</button>
                         </Link>
@@ -46,18 +45,12 @@ export const Services = () => {
                             bir unsuru olarak karşımıza çıkar. Zayıflama, dengeli beslenme, düzenli egzersiz ve sağlıklı
                             alışkanlıkların bir kombinasyonunu içerir. Vücut ağırlığını kontrol etmek, genel sağlık durumunu
                             iyileştirebilir ve bir dizi olumlu etki yaratabilir
-                        </p>
-                        
+                        </p>                        
                         <Link to="/hizmetlerimiz/sigara-birakma">
                         <button className='button'>Devamını Oku</button>
                         </Link>
-                        <br />
-                    </div>
-                    
+                    </div>                    
                 </div>
-                <br />
-                <br />
-                <br />
             </div>
         </div>
         </>

@@ -38,7 +38,6 @@ a {
 .container {
     max-width: 80%;
     margin: auto;
-
 }
 
 .header {
@@ -58,10 +57,26 @@ a {
     flex: 1;
     text-align: justify;
 }
-h1 {
+h1{
     font-size: 22px;
     color: #ff6141;
 }
 /* h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 } */
+@media screen and (max-width: 768px) {
+    .container{   
+      max-width: 90%;
+      margin: auto;
+    }
+    .parag{
+      font-size: 14px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .header{
+        font-size: 25px;
+    }
+  }
+  

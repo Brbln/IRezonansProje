@@ -1,7 +1,7 @@
 import React from 'react'
 import Header2 from '../mainPage/Header2'
 import "../mainPage/Home.css"
-import Footer from '../mainPage/Footer'
+import Footer from '../footer/Footer'
 
 const SService = ({ header }) => {
     return (

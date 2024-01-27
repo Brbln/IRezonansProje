@@ -29,23 +29,6 @@ body {
   transition: 0.1s;
 }
 
-@media screen and (max-width: 768px) {
-  .head {
-    overflow-x: hidden;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .head .container {
-    max-width: 100%;
-  }
-
-  .head i {
-    font-size: 15px;
-    margin: 5px 25px;
-  }
-}
-
 .navbar {
   background: linear-gradient(to left, #ff3833, #ff6141, #ff884b);
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -157,7 +140,19 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .head {
+    overflow-x: hidden;    
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  .head .container {
+    max-width: 100%;
+  }
+  .head i {
+    font-size: 15px;
+    margin: 5px 10px;
+  }
   .navbar ul {
     padding-top: 30px;
   }

@@ -2,7 +2,7 @@ import React from "react"
 import "./Home.css"
 import About from "./About"
 import Services from "./Services"
-import Footer from "./Footer"
+import Footer from "../footer/Footer"
 
 const Home = () =>{
     return(

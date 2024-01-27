@@ -1,7 +1,8 @@
 import React from 'react'
 import Header2 from './mainPage/Header2'
 import img from "./images/slider/il.jpg"
-import Footer from './mainPage/Footer'
+import Footer from './footer/Footer'
+import "./style.css"
 
 
 export const Blog = () => {

@@ -1,19 +1,15 @@
 import React from 'react';
-import img from "../images/logo.png"
-import img2 from "../images/logo21.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import "./Footer.css";
 const Footer = () => {
   return (
     <>
       <div className="footer">
         <div className="cow">
           <br />
-        </div>
-        {/* <img src={img} alt="" /> */}
-        {/* <img src={img2} alt="" /> */}
-        
+        </div>        
         <div className="footlist">
           <ul>
             <li>
