@@ -113,7 +113,7 @@
   width: 90%;
   height: 250px;
   object-fit: cover;
-  margin: 20px 20px;
+  margin: 20px;
   text-align: center;
 }
 
@@ -195,7 +195,8 @@
     left: 60%
   }
 
-  .about .text {
+  .about .text,
+  .s_box {
     display: block;
   }
 
@@ -208,8 +209,8 @@
     margin: 10px 10px;
   }
 
-  .s_box {
-    display: block;
+  .s_box img {
+    margin: 15px;
   }
 
   .location {

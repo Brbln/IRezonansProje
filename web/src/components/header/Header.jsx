@@ -5,7 +5,6 @@ import Head from "./Head";
 const Header = () =>{
     return(
         <>                
-        
         <Head />
         <Navbar />
         </>
