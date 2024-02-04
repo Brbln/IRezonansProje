@@ -6,7 +6,7 @@ const Contact = require("../Models/contactModel");
 //@route get /api/contacts
 //@access public
 const getContacts = asyncHandler(async (req, res) => {
-    const contacts = await Contact.find();
+    const contacts = await Contact.find({user_id: req.user.id});
     res.status(200).json(contacts);
 });
 
@@ -40,6 +40,10 @@ const getContact = asyncHandler(async (req, res) => {
         res.status(404);
         throw new Error("contact not found");
     }
+    if(contact.user_id.toString() !== req.user.id){
+        res.status(403);
+        throw new Error("sdfksfs");
+    }
     res.status(200).json(contact);
 });
 
@@ -71,7 +75,12 @@ const deleteContact = asyncHandler(async (req, res) => {
         res.status(404);
         throw new Error("contact not found");
     }
-    await Contact.remove();
+    
+    if(contact.user_id.toString() !== req.user.id){
+        res.status(403);
+        throw new Error("sdfksfs");
+    }
+    await Contact.deleteOne({_id:req.params.id});
     res.status(200).json(contact);
 });
 
