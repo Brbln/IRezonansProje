@@ -4,6 +4,13 @@ import { faWhatsapp, faFacebook, faInstagram } from '@fortawesome/free-brands-sv
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import "./Footer.css";
 const Footer = () => {
+  const whatsappNumber = "+905539879830";
+  const handleWhatsappClick = () => {
+    window.location.href = `https://wa.me/${whatsappNumber}`;
+  };
+  const instaClick =()=>{
+    window.location.href =`https://www.instagram.com/ilkadim_zayiflama_rezonans/`;
+  };
   return (
     <>
       <div className="footer">
@@ -35,10 +42,10 @@ const Footer = () => {
             <FontAwesomeIcon icon={faFacebook} size="2x" />
           </i>
           <i>
-            <FontAwesomeIcon icon={faInstagram} size="2x" />
+            <FontAwesomeIcon icon={faInstagram} size="2x" onClick={instaClick} />
           </i>
           <i>
-            <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+            <FontAwesomeIcon icon={faWhatsapp} size="2x" onClick={handleWhatsappClick}/>
           </i>
         </div>
           <p>&copy; 2024 İlkadım Rezonans & Zayıflama</p>

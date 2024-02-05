@@ -11,6 +11,8 @@ const port = process.env.PORT || 5000;
 app.use(express.json());
 app.use("/api/contacts",require("./Routes/contactRoutes"));
 app.use("/api/users",require("./Routes/userRoutes"));
+app.use("/api/admins",require("./Routes/adminRoutes"));
+app.use("/api/randevu",require("./Routes/randevuRoutes"));
 app.use(errorHandler);
 
 app.listen(port, () => {
