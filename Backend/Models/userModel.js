@@ -3,26 +3,27 @@ const mongoose = require("mongoose");
 const userSchema = mongoose.Schema({
     username: {
         type: String,
-        required: [true, " please add the user name"],
+        required: [true, "Please add the username"],
     },
     email: {
         type: String,
-        required: [true, "This {PATH} is required"],
+        required: [true, "The email is required"],
         match: [/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, "Invalid email format"],
         unique: true,
         validate: {
             validator: async function (value) {
-                const existingUsers = await model("User").findOne({ email: value });
-                return !existingUsers;
+                const existingUser = await mongoose.model("User").findOne({ email: value });
+                return !existingUser;
             },
-            message: "This {PATH} is already registered",
+            message: "This email is already registered",
         }
     },
     password: {
         type: String,
         required: [true, "Please add a user password"]
-    }},
-    {
-        timestamps: true
-    });
+    }
+}, {
+    timestamps: true
+});
+
 module.exports = mongoose.model("User", userSchema);

@@ -1,5 +1,4 @@
 const { Schema, model } = require("mongoose");
-const bcrypt = require("bcryptjs");
 
 const AdminSchema = new Schema({
   name: {
@@ -54,4 +53,4 @@ AdminSchema.methods.comparePassword = function (password) {
   return bcrypt.compareSync(password, this.password);
 };
 
-module.exports =mongoose.model("Admin", AdminSchema);
+module.exports =model("Admin", AdminSchema);

@@ -1,7 +1,8 @@
-const express=require("express");
-const {create, getAll} =require("../Controllers/randevuController");
+const express = require("express");
+const router = express.Router(); // express.Router() ile yeni bir Router nesnesi oluşturuluyor
+const { create, getAll } = require("../Controllers/randevuController");
 
-routes.post("/randevu/create",create);
-routes.get("/randevu/getAll",getAll);
+router.post("/randevu/create", create); // router nesnesi üzerinden post yöntemiyle /randevu/create yoluna işlem ekleme
+router.get("/randevu/getAll", getAll); // router nesnesi üzerinden get yöntemiyle /randevu/getAll yoluna işlem ekleme
 
-export default router;
+module.exports = router; // router nesnesini dışa aktarma

@@ -25,4 +25,4 @@ const rndSchema = new Schema({
         required: [true, "This {PATH} is required"]
     }
 });
-module.exports = mongoose.model("Randevu", rndSchema);
+module.exports = model("Randevu", rndSchema);

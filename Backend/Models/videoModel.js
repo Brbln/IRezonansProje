@@ -6,4 +6,4 @@ const vidSchema =new Schema({
             required: [true, "This {PATH} is required"]            
         }
 });
-module.exports=mongoose.model("Video",vidSchema);
+module.exports=model("Video",vidSchema);
