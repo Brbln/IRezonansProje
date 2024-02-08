@@ -24,6 +24,16 @@ const getAll = async (req, res) => {
         res.status(400).send({ message: "Bir şeyler yanlış gitti" });
     }
 };
+const getOne = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const rand = await Randevu.findById(id);
+        res.status(200).send({ message: "Randevu başarıyla getirildi", data: rand });
+    } catch (error) {
+        console.log(error);
+        res.status(400).send({ message: "Bir şeyler yanlış gitti" });
+    }
+}
 const remove = async (req, res) => {
     try {
         const { id } = req.params;
@@ -34,4 +44,4 @@ const remove = async (req, res) => {
         res.status(400).send({ message: error.message });
     }
 };
-module.exports = { create, getAll, remove}; 
+module.exports = { create, getAll, getOne, remove}; 
