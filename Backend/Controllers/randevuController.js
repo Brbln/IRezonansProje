@@ -6,7 +6,7 @@ const create = async (req, res) => {
         var newRandevu = new Randevu({
             name, surname, email, phone, text, date
         });
-        await newRandevu.save(); // Randevu.save() yerine newRandevu.save()
+        await newRandevu.save();
         res.status(201).send({ message: "Randevu başarıyla oluşturuldu", data: newRandevu });
     } catch (error) {
         console.log(error);
@@ -24,5 +24,14 @@ const getAll = async (req, res) => {
         res.status(400).send({ message: "Bir şeyler yanlış gitti" });
     }
 };
-
-module.exports = { create, getAll }; // model fonksiyonu yerine exports ile fonksiyonları dışa aktar
+const remove = async (req, res) => {
+    try {
+        const { id } = req.params;
+        await Randevu.findOneAndDelete({ _id: id });
+        res.status(200).send({ message: "Randevu başarıyla silindi" });
+    } catch (error) {
+        console.log(error);
+        res.status(400).send({ message: error.message });
+    }
+};
+module.exports = { create, getAll, remove}; 
