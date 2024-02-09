@@ -1,19 +1,6 @@
-// import React from 'react'
-
-// const Randevu = () => {
-//     return (
-//         <><div className="randevu">
-//             <div className="container">
-//                 <h2>aslı</h2>
-//             </div>
-//         </div>
-
-//         </>
-//     )
-// }
-
-// export default Randevu
 import React, { useState } from 'react';
+import axios from "axios";
+import "./style.css";
 
 const Randevu = () => {
     const [formData, setFormData] = useState({
@@ -21,8 +8,7 @@ const Randevu = () => {
         surname: '',
         email: '',
         phone: '',
-        text: '',
-        date: ''
+        text: ''
     });
 
     const handleChange = (e) => {
@@ -33,31 +19,48 @@ const Randevu = () => {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Burada form verilerini gönderebilirsiniz
-        console.log(formData);
-        // Formu gönderdikten sonra isteğe bağlı olarak formu sıfırlayabilirsiniz
-        setFormData({
-            name: '',
-            surname: '',
-            email: '',
-            phone: '',
-            text: '',
-            date: ''
-        });
+        try {
+            const response = await axios.post('/api/randevus/create', formData);
+            console.log(response.data); // Sunucudan gelen yanıtı konsola yazdır
+            console.log(formData);
+            // Formu gönderdikten sonra isteğe bağlı olarak formu sıfırlayabilirsiniz
+            setFormData({
+                name: '',
+                surname: '',
+                email: '',
+                phone: '',
+                text: ''
+            });
+        } catch (error) {
+            console.error('Randevu oluşturulurken bir hata oluştu:', error);
+        }
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Name" />
-            <input type="text" name="surname" value={formData.surname} onChange={handleChange} placeholder="Surname" />
-            <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email" />
-            <input type="text" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone" />
-            <textarea name="text" value={formData.text} onChange={handleChange} placeholder="Message"></textarea>
-            <input type="date" name="date" value={formData.date} onChange={handleChange} />
-            <button type="submit">Submit</button>
-        </form>
+        <>
+            <div className="container">
+                <div className="randevu">
+                    <h2>Ön Randevu Alabilirsiniz</h2>
+                    <p>Gönderdiğiniz iletişim bilgileri aracıılığıyla en kısa sürede sizlerle iletişime geçeceğiz.</p>
+                    <form onSubmit={handleSubmit}>
+                        <label>Adınız</label>
+                        <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Adınız" />
+                        <label>Soyadınız</label>
+                        <input type="text" name="surname" value={formData.surname} onChange={handleChange} placeholder="Soyadınız" />
+                        <label>E-Posta</label>
+                        <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="E-Posta Adresiniz" />
+                        <label>Telefon</label>
+                        <input type="text" name="phone" value={formData.phone} onChange={handleChange} placeholder="Telefon" />
+                        <label>Ekstra Mesajınız</label>
+
+                        <textarea name="text" value={formData.text} onChange={handleChange} placeholder="Mesajınız"></textarea>
+                        <button type="submit">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </>
     );
 };
 
