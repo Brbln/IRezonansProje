@@ -9,9 +9,7 @@ const AboutPage = () => {
     <>
     <Header2 customHeader={"Hakkımızda"}/>
     <About/>
-    <Randevu/>
-    
-    
+    <Randevu/>        
     <Footer/>
     </>
   )

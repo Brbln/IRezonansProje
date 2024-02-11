@@ -10,22 +10,22 @@
 }
 
 .inf {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 70px;
+    margin-bottom: 120px;
 }
 
 .location iframe {
     width: 100%;
-    height: 350px;
+    height: 300px;
     border: 0;
     border-radius: 10px;
 }
 
-.contact .cont_inf {
+.contact .cont_inf { 
     flex: 1;
-    padding: 25px;
+    padding: 20px;
     text-align: left;
-    height: 300px;
+    height: 250px;
     box-shadow: 0px 0px 0px 3px #ff884b;
     border-radius: 5px;
     background-color: rgb(254, 248, 242);
@@ -58,18 +58,20 @@
 .cont_inf p {
     display: flex;
     padding: 10px 15px;
+} 
+.text{
+    margin: 10px;
 }
-
 .text .par {
-    margin: 12px;
+    margin: 13px 0;
 }
 
 .bar .tel {
-    margin-top: 9px;
+    margin-top: 8px;
 }
 
 .par .tel {
-    padding: 11px;
+    padding: 10px;
     padding-bottom: 35px;
 }
 
@@ -89,16 +91,67 @@
 }
 
 /* -----------------Randevu------------------ */
-.randevu label{
-    font-size: 19px;
-    margin-bottom: 70px;
+
+.randevu .foto{ 
+    background-color: rgb(255, 255, 255,0.4);
+    display: flex;
+}
+.randevu img{
+    width: 250px;
+}
+.bg-photo {
+    position: relative;
+    background-image: url('./images/slider/t.jpeg');
+    background-size: 700px;
+    background-position:200px 50px;
+    background-repeat: no-repeat;
+}
+.randhead{
+    text-align: left;
+    padding: 70px 30px;
+    max-width: 500px;
+}
+.randhead h2{
+font-size: 40px;
+    color: rgb(255,0,0,.8);
+}
+.randhead h1{
+    color: rgb(0, 0, 0,0.9);
+    margin:40px 0;
+    font-size: 23px;
+}
+.randhead p{
+    color:rgb(0, 0, 0 ,);
+    margin: 30px 0;
+    font-size: 21px;
+} 
+.randevu .time{
+    color: rgb(255,0,0,.9);
+    margin: 10px 0;
 }
 
-form {
-    max-width: 400px;
-    height: 500px;
-    margin: 0 auto;
+.rand{
+    max-width: 600px;
+    margin: 20px auto;
+    margin-left: 40px;
+    padding: 20px;
+    border-radius: 10px;
 }
+.rand label {
+    font-size: 19px;
+    margin: 15px 0;
+    display: block;
+}
+.row {
+    display: flex;
+    margin: 10px 0;
+}
+
+.row .col {
+    flex: 1;
+    margin-right: 15px;
+}
+
 
 input[type="text"],
 input[type="email"],
@@ -108,11 +161,20 @@ button {
     font-size: 18px;
     width: 100%;
     height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+input[type="date"]:focus {
+    border-color: #ff884b;
+    outline: none;
 }
 
 button {
@@ -125,18 +187,62 @@ button {
 }
 
 button:hover {
-    background-color: #ff6141;
+    background-color: rgb(255, 97, 65);
 }
 
 textarea {
-    height: 100px;
-    /* Metin alanı yüksekliği */
+    height: 150px;
 }
 
-/* İsteğe bağlı olarak formun başlığını stilleyebilirsiniz */
-.form-title {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
+
+@media screen and (max-width: 768px) {
+
+/*----------------iletişim-------------- */
+.contact .container{
+    display: block;
+}
+.contact .cont_inf {
+    margin: 30px 0;
+    padding: 10px 20px;
+    height: 220px;
+}
+
+.cont_inf i {  
+    font-size: 20px;
+    margin-right: 5px;
+}
+.text{
+    margin: 0;
+}
+.bar b {
+    text-align: left;
+    padding: 15px 5px;
+}
+
+.cont_inf p { 
+    padding: 10px 0;
+}
+.text .par {
+    margin: 15px 3px;
+    font-size: 15px;
+}
+.par .adr{
+    padding: 10px 5px;
+    text-align: justify;
+}
+.par .tel {
+    padding: 11px 9px;
+    padding-bottom: 17px;
+}
+.par .post{
+    padding: 5px 10px;
+}
+
+/*---------------Randevu--------------- */
+
+.randevu .foto{
+    display: block;
+}
+
+
 }

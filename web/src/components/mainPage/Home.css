@@ -225,5 +225,21 @@
     margin-left: 27%;
     font-size: 13px;
   }
+  
+  .nav::before {
+    top: 141.5px;
+    height:300px;
+  }
+  .nav .img {
+    display: block;
+    height: 300px;
+    object-fit:cover;
+  }
+  .nav h2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 55px; 
+  }
 
 }

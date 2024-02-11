@@ -2,6 +2,7 @@ import React from 'react'
 import Header2 from '../mainPage/Header2'
 import "../mainPage/Home.css"
 import Footer from '../footer/Footer'
+import Randevu from '../Randevu'
 
 const SService = ({ header }) => {
     return (
@@ -36,6 +37,7 @@ const SService = ({ header }) => {
                         olabileceğini ve daha fazla incelemenin gerekebileceğini gösterir. Bu durumda,</p>
                 </div>
             </div>
+            <Randevu/>
             <Footer />
         </>
     )

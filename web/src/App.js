@@ -6,7 +6,6 @@ import Header from "./components/header/Header";
 import Slider from './components/mainPage/Slider';
 import ContactUs from './components/ContactUs';
 import MServices from './components/services/MServices';
-import MTemplate from './components/services/MTemplate';
 import AboutPage from './components/AboutPage';
 import Blog from './components/Blog';
 import SService from './components/services/SService';

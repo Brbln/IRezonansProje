@@ -4,22 +4,18 @@ import Header2 from './mainPage/Header2';
 import img from './images/slider/il.jpg';
 import Footer from './footer/Footer';
 import './style.css';
+import Randevu from './Randevu';
 
 const Blog = () => {
-    const [data, setData] = useState([]);
-
+    const [items, setItems] = useState([]);
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                // API'nin doğru adresini kullandığınızdan emin olun
-                const result = await axios.get('http://localhost:5001/api/videos');
-                // Veriyi state'e ayarlayın
-                setData(result.data);
-            } catch (error) {
-                console.error('Veri alınırken bir hata oluştu:', error);
-            }
-        };
-        fetchData();
+        axios.get("/api/videos/")
+        .then(response=>{   
+            console.log(response.data);
+            setItems(response.date);
+        })
+            // .then(response => setItems(response.data))
+            .catch(error => console.error(error));
     }, []);
 
     return (
@@ -29,14 +25,17 @@ const Blog = () => {
                 <div className="container">
                     <h2 className='header'>Danışan Değerlendirmelerimiz</h2>
                     <ul>
-                        
-                        {data && data.map(item => (
-                            <li key={item._id}>{item.name}</li>
+                        {items.map(item => (
+                            <li key={item._id}>
+                                <h2>{item.vidName} asli</h2>
+                                <p>{item.vidLink}</p>
+                            </li>
                         ))}
                     </ul>
                     <img src={img} alt="" />
                 </div>
             </div>
+            <Randevu/>
             <Footer />
         </>
     );
