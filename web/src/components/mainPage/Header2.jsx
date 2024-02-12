@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import img from "../images/slider/12.jpg";
 
 const Header2 = ({ customHeader, customImg }) => {
-  const [imageSrc, setImageSrc] = useState(customImg || img);
+  const [imageSrc] = useState(customImg || img);
   return (
     <>
       <div className="nav">

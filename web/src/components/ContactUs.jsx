@@ -22,10 +22,7 @@ const ContactUs = () => {
                     <section className='cont_inf'>
                         <div className="text">
                             <section className='bar'>
-                                <p className='adr'>
-                                    <i class="fa fa-map"></i>
-                                    <b>Adres: </b>
-                                </p>
+                                
                                 <p className='tel'>
                                     <i class="fa fa-phone" />
                                     <b>Telefon: </b>
@@ -34,11 +31,15 @@ const ContactUs = () => {
                                     <i class="fas fa-envelope"></i>
                                     <b> E-Posta: </b>
                                 </p>
+                                <p className='adr'>
+                                    <i class="fa fa-map"></i>
+                                    <b>Adres: </b>
+                                </p>
                             </section>
                             <section className='par'>
-                                <p className='adr'>Kale, Öğretmenevi karşısı, 19 Mayıs Blv. Yuvam Apt B Blok Kat:3, 55070 İlkadım/Samsun</p>
                                 <p className='tel'>+90 (553) 987 9830, +90 (530) 123 1234</p>
                                 <p className='post'>info@gmail.com</p>
+                                <p className='adr'>Kale, Öğretmenevi karşısı, 19 Mayıs Blv. Yuvam Apt B Blok Kat:3, 55070 İlkadım/Samsun</p>
                             </section>
                         </div>
                     </section>

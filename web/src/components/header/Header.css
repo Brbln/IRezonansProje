@@ -141,27 +141,34 @@ body {
 
 @media screen and (max-width: 768px) {
   .head {
-    overflow-x: hidden;    
+    overflow-x: hidden;
     flex-direction: column;
     align-items: flex-start;
   }
+
   .head .container {
     max-width: 100%;
   }
+
   .head i {
     font-size: 15px;
     margin: 5px 10px;
   }
+
   .navbar ul {
     padding-top: 30px;
   }
-  .navbar .width img{
+
+  .navbar .width img {
     display: none;
   }
+
+  .navbar .navlink {
+    display: none;
+  }
+
   .h2head,
-  .h1head{
-text-align: left; 
- }
-
-
+  .h1head {
+    text-align: left;
+  }
 }
