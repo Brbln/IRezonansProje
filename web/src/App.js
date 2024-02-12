@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Home from './components/mainPage/Home';
 import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
@@ -15,6 +15,7 @@ function App() {
     <>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
       <Router>
+        <ScrollToTop />
         <Header />
         <Switch>
           <Route path="/" exact>
@@ -34,5 +35,14 @@ function App() {
   );
 }
 
-export default App;
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
+export default App;

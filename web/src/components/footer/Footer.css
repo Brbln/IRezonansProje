@@ -4,8 +4,11 @@
     display: block;
     width: 100%;
     margin-bottom: 0;
-    padding-bottom: 0;
-    margin-top: 20px; 
+    padding-bottom: 0; 
+  } 
+  .footlist ul { 
+    margin-bottom: 5px;
+    display: inline-block;
   }
   .footer .cow{
     margin-top: 50px;
@@ -26,7 +29,8 @@
     background: none;
     color:rgb(0, 0, 0, 0.8);
   }
-  .footer .footlist{  
+
+  .footlist{  
     padding: 0px 0 15px 0;
     text-align: center;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
@@ -52,16 +56,23 @@
     padding: 20px 0 40px 0;
     background:linear-gradient(to left, #ff3833, #ff6141, #ff884b);
   }
-.footer{
-  margin-bottom: 0;
-}
+
 @media screen and (max-width: 768px) {
   .footer .footlist li {
     margin: 10px; 
     font-size: 13px;
   }
-  .end p {
-    font-size: 15px;
+  .footer .cow{ 
+    margin-bottom: 20px; 
   }
-  
+  .end p { 
+    font-size: 14px;
+  } 
+  .end { 
+    padding: 15px 0 25px 0; 
+  }
+  .footer .icons{
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
 }

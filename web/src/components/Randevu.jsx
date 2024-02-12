@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import axios from "axios";
 import "./style.css";
-import img from "./images/slider/t.jpeg";
-
 const Randevu = () => {
     const [formData, setFormData] = useState({
         name: '',

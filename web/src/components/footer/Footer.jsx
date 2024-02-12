@@ -8,15 +8,15 @@ const Footer = () => {
   const handleWhatsappClick = () => {
     window.location.href = `https://wa.me/${whatsappNumber}`;
   };
-  const instaClick =()=>{
-    window.location.href =`https://www.instagram.com/ilkadim_zayiflama_rezonans/`;
+  const instaClick = () => {
+    window.location.href = `https://www.instagram.com/ilkadim_zayiflama_rezonans/`;
   };
   return (
     <>
       <div className="footer">
         <div className="cow">
-          <br />
-        </div>        
+          <br/>
+        </div>
         <div className="footlist">
           <ul>
             <li>
@@ -28,6 +28,8 @@ const Footer = () => {
             <li>
               <Link to='/hizmetlerimiz/'>HİZMETLERİMİZ</Link>
             </li>
+          </ul>
+          <ul>
             <li>
               <Link to='/Blog/'>BİZDEN GÖRÜNTÜLER</Link>
             </li>
@@ -37,17 +39,17 @@ const Footer = () => {
           </ul>
         </div>
         <div className="end">
-        <div className="icons">
-          <i>
-            <FontAwesomeIcon icon={faFacebook} size="2x" />
-          </i>
-          <i>
-            <FontAwesomeIcon icon={faInstagram} size="2x" onClick={instaClick} />
-          </i>
-          <i>
-            <FontAwesomeIcon icon={faWhatsapp} size="2x" onClick={handleWhatsappClick}/>
-          </i>
-        </div>
+          <div className="icons">
+            <i>
+              <FontAwesomeIcon icon={faFacebook} size="2x" />
+            </i>
+            <i>
+              <FontAwesomeIcon icon={faInstagram} size="2x" onClick={instaClick} />
+            </i>
+            <i>
+              <FontAwesomeIcon icon={faWhatsapp} size="2x" onClick={handleWhatsappClick} />
+            </i>
+          </div>
           <p>&copy; 2024 İlkadım Rezonans & Zayıflama</p>
         </div>
       </div>

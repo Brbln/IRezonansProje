@@ -225,7 +225,7 @@
     margin-left: 27%;
     font-size: 13px;
   }
-  
+
   .nav::before {
     top: 141.5px;
     height:300px;
@@ -237,9 +237,9 @@
   }
   .nav h2 {
     position: absolute;
-    top: 40%;
+    top: 350px;
     left: 50%;
-    font-size: 55px; 
+    font-size: 50px; 
   }
 
 }

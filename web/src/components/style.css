@@ -194,7 +194,7 @@ textarea {
     height: 150px;
 }
 
-
+/*--------------------Responsive Tasarım------------------- */
 @media screen and (max-width: 768px) {
 
 /*----------------iletişim-------------- */
@@ -242,7 +242,63 @@ textarea {
 
 .randevu .foto{
     display: block;
+    background-color: rgb(255, 255, 255,0.55);
 }
+ 
+.bg-photo { 
+    background-size: 350px;
+    background-position:0px  100px ;  
+}
+.randhead{
+    text-align: left;
+    padding: 30px 12px; 
+}
+.randhead h2{
+font-size: 26px; 
+}
+.randhead h1{ 
+    margin:20px 0;
+    font-size: 20px;
+}
+.randhead p{ 
+    margin: 20px 0;
+    font-size: 19px;
+} 
+.randevu .time{ 
+    margin: 10px 0;
+}
+
+.rand{
+    max-width: 600px;
+    margin: 0; 
+    padding: 10px; 
+}
+.rand label {
+    font-size: 15px;
+    margin: 10px 0;
+    display: block;
+}
+.row {
+    display: block;
+    margin: 0px 0;
+}
+ 
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="date"],
+button {
+    font-size: 15px; 
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px;  
+    width: 290px;
+}
+textarea {
+    height: 150px; 
+}
+
+
 
 
 }
