@@ -128,7 +128,7 @@ font-size: 40px;
     margin: 10px 0;
 }
 
-.rand{
+.rand{ 
     max-width: 600px;
     margin: 20px auto;
     margin-left: 40px;
@@ -165,6 +165,7 @@ button {
     border: 1px solid #ccc;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
+    
 }
 
 input[type="text"]:focus,
@@ -173,6 +174,7 @@ textarea:focus,
 input[type="date"]:focus {
     border-color: #ff884b;
     outline: none;
+    
 }
 
 button {
@@ -256,7 +258,7 @@ textarea {
 
 .randevu .foto{
     display: block;
-    background-color: rgb(255, 255, 255,0.55);
+    background-color: rgb(255, 255, 255,0.7);
 }
  
 .bg-photo { 
@@ -264,8 +266,8 @@ textarea {
     background-position:0px  100px ;  
 }
 .randhead{
-    text-align: left;
-    padding: 30px 12px; 
+    text-align: center;
+    padding: 20px 12px; 
 }
 .randhead h2{
 font-size: 26px; 
@@ -306,7 +308,7 @@ button {
     height: 40px;
     margin-bottom: 10px;
     padding: 5px;  
-    width: 290px;
+    width: 300px;
 }
 textarea {
     height: 150px; 

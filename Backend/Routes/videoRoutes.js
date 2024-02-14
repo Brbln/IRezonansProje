@@ -3,7 +3,7 @@ const router = express.Router();
 const { create, getAll, remove, getOne, update } = require('../Controllers/videoController');
 
 router.post("/create", create);
-router.get("/", getAll);
+router.get("/All", getAll);
 router.get("/:id", getOne);
 router.delete("/:id", remove);
 router.put("/:id",update);
