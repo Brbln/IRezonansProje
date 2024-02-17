@@ -2,10 +2,10 @@ const express = require("express");
 const { registerUser, currentUser,loginUser } = require("../Controllers/userController");
 const validateToken = require("../Middleware/validateTokenHandler");
 
-const router = express.Router();
+const routes = express.Router();
 
-router.post("/register",registerUser);
-router.post("/login", loginUser);
-router.get("/current", validateToken, currentUser);
+routes.post("/register",registerUser);
+routes.post("/login", loginUser);
+routes.get("/current", validateToken, currentUser);
 
-module.exports =router;
+module.exports =routes;
