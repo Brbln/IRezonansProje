@@ -18,5 +18,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "webpack-dev-middleware": "^7.1.1"
+  }
 }
