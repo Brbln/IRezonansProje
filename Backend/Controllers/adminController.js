@@ -1,4 +1,5 @@
-const Admin = require("../Models/adminModel");
+import Admin from '../Models/adminModel'
+
 
 const create = async (req, res) => {
     try {
@@ -70,5 +71,5 @@ const remove = async (req, res) => {
         res.status(400).send({ message: error.message });
     }
 };
-
+export default icecreamSlice.reducer;
 module.exports = { create, getAll, getOne, update, remove };

@@ -1,7 +1,7 @@
-const express = require('express');
-const routes = express.Router();
-const { create, getAll, getOne, update, remove } = require("../Controllers/adminController");
-const validateToken =require("../Middleware/validateTokenHandler")
+import 'express'
+import { routes } from express.Router();
+import { create, getAll, getOne, update, remove } from "../Controllers/adminController"
+import validateToken from "../Middleware/validateTokenHandler"
 
 routes.use(validateToken);
 routes.route("/").get(getAll);

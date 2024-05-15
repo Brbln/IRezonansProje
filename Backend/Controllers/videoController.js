@@ -1,4 +1,4 @@
-const Video = require("../Models/videoModel");
+import Video from '../Models/videoModel'
 
 const create = async (req, res) => {
     try {

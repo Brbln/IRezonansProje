@@ -1,5 +1,5 @@
-const asyncHandler = require("express-async-handler");
-const Contact = require("../Models/contactModel");
+import {asyncHandler} from 'express-async-handler'
+import Contact from '../Models/contactModel'
 
 
 //@desc get all contacts

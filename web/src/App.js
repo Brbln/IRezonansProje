@@ -9,6 +9,8 @@ import MServices from './components/services/MServices';
 import AboutPage from './components/AboutPage';
 import Blog from './components/Blog';
 import SService from './components/services/SService';
+import AdminList from './components/admin/AdminList';
+import AdminForm from './components/admin/AdminForm';
 
 function App() {
   return (
@@ -22,13 +24,15 @@ function App() {
             <Slider />
             <Home />
           </Route>
+          <Route path="/admins" component={AdminList} />
+          <Route path="/create-admin" component={AdminForm} />
           <Route path="/hakkimizda" exact component={AboutPage} />
           <Route path="/hizmetlerimiz" exact component={MServices} />
           <Route path="/iletisim" exact component={ContactUs} />
-          <Route path="/Blog" exact render={() => <Blog customHeader="Bizden Görüntüler"/>}/>
-          <Route path="/hizmetlerimiz/gida-silme" exact  render={() => <SService header="Gıda Silme"/>} />
-          <Route path="/hizmetlerimiz/istah-kapama" exact render={() => <SService header="İştah Kapama"/>} />
-          <Route path="/hizmetlerimiz/sigara-birakma" exact render={() => <SService header="Sigara bırakma"/>} />
+          <Route path="/Blog" exact render={() => <Blog customHeader="Bizden Görüntüler" />} />
+          <Route path="/hizmetlerimiz/gida-silme" exact render={() => <SService header="Gıda Silme" />} />
+          <Route path="/hizmetlerimiz/istah-kapama" exact render={() => <SService header="İştah Kapama" />} />
+          <Route path="/hizmetlerimiz/sigara-birakma" exact render={() => <SService header="Sigara bırakma" />} />
         </Switch>
       </Router>
     </>

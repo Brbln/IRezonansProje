@@ -1,4 +1,4 @@
-const Randevu = require("../Models/randevuModel");
+import Randevu from '../Models/randevuModel'
 
 const create = async (req, res) => {
     try {
