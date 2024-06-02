@@ -1,10 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Link } from 'react-router-dom';
 import "./Footer.css";
 const Footer = () => {
-  const whatsappNumber = "+905539879830";
+  const whatsappNumber = "+905308939288";
   const handleWhatsappClick = () => {
     window.location.href = `https://wa.me/${whatsappNumber}`;
   };

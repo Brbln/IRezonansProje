@@ -22,28 +22,28 @@
 }
 
 .sliderText {
-  font-size: 30px;
+  font-size: 32px;
   position: absolute;
-  top: 20%;
+  top: 35%;
   left: 50%;
-  transform: translate(-130%, 0);
-  color: #000;
+  transform: translate(-50%, 0);
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
 .swiperSlide p {
-  color: #000;
+  color:  rgb(0, 0, 0, 0.8);
 }
 
 @keyframes fadeInAnimation {
   from {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-70%);
   }
 
   to {
     opacity: 1;
-    transform: translateX(-130%);
+    transform: translateX(-50%);
   }
 }
 
@@ -83,6 +83,7 @@
 
 .about .parag {
   margin: 30px 30px;
+  font-size: 18px;
 }
 
 /* ------------------services------------------- */
@@ -93,16 +94,21 @@
 }
 
 .s_box .s_row {
+  position: relative;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
   box-shadow: 0 2px 5px #ff884b;
   border-radius: 5%;
   flex-basis: calc(33% - 30px);
   background-color: rgb(254, 248, 242);
-  margin: 40px 10px;
+  margin: 20px 10px;
   padding: 20px 0;
+  height: 550px;
 }
 
 .services .parag p {
-  margin: 15px 25px;
+  margin: 15px 20px;
 }
 
 .services .parag h1 {
@@ -118,8 +124,10 @@
 }
 
 .s_box .button {
-  position: absolute;
-  margin-left: 8pc;
+  position: absolute;  
+  margin-top: 0px; 
+  left: 50%; 
+  transform: translateX(-50%);  
   font-size: 15px;
   color: #fff;
   background-color: #ff6141;
@@ -176,7 +184,7 @@
 
 .nav h2 {
   position: absolute;
-  top: 75%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;

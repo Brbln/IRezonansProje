@@ -1,13 +1,13 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import img from "../images/slider/2.jpg";
-import img1 from "../images/slider/1.jpg";
-import img2 from "../images/slider/3.jpg";
+import img from "../images/img/gid.jpg";
+import img1 from "../images/img/istt.png";
+import img2 from "../images/img/bag1.jpg";
 
 const Slider = () => {
 
@@ -17,7 +17,7 @@ const Slider = () => {
     setAnimate(true);
     setTimeout(() => {
       setAnimate(false);
-    }, 1000);   
+    }, 1000);
   };
 
   return (
@@ -26,7 +26,7 @@ const Slider = () => {
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
-        freeMode={true} 
+        freeMode={true}
         pagination={{
           clickable: true,
         }}
@@ -35,30 +35,31 @@ const Slider = () => {
         className="swiper"
         onSlideChange={handleSlideChange}
       >
-        <SwiperSlide>
-          <div className="swiperSlide">
-            <img src={img} alt="" />
-            <div className={`sliderText ${animate ? 'fadeIn' : ''}`}>
-              <h2>İlk Slayt Başlığı</h2>
-              <p>Bu bir açıklama metni olabilir.</p>
-            </div>
-          </div>
-        </SwiperSlide>
+
         <SwiperSlide>
           <div className="swiperSlide">
             <img src={img1} alt="" />
             <div className={`sliderText ${animate ? 'fadeIn' : ''}`}>
-              <h2>İkinci Slayt Başlığı</h2>
-              <p>Bu bir başka açıklama metni olabilir.</p>
+              <h2>İştah Kapama</h2>
+              <p>İştah Kontrolünüzü Sağlayabilirsiniz!</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="swiperSlide">
-              <img src={img2} alt="" />
+            <img src={img} alt="" />
             <div className={`sliderText ${animate ? 'fadeIn' : ''}`}>
-              <h2>Üçüncü Slayt Başlığı</h2>
-              <p>Bu da bir diğer açıklama metni olabilir.</p>
+              <h2>Gıda Silme</h2>
+              <p> Gıda Silme ile Yeninen Başlayın!</p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="swiperSlide">
+            <img src={img2} alt="" />
+            <div className={`sliderText ${animate ? 'fadeIn' : ''}`}>
+              <h2>Bağımlılık Terapisi</h2>
+              <p>Bağımlılıklarınızı Geride Bırakabilirsiniz!</p>
             </div>
           </div>
         </SwiperSlide>

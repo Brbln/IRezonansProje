@@ -7,10 +7,12 @@ import Slider from './components/mainPage/Slider';
 import ContactUs from './components/ContactUs';
 import MServices from './components/services/MServices';
 import AboutPage from './components/AboutPage';
-import Blog from './components/Blog';
-import SService from './components/services/SService';
+import Blog from './components/Blog'; 
 import AdminList from './components/admin/AdminList';
 import AdminForm from './components/admin/AdminForm';
+import Bagimlilik from './components/services/Bagimlilik';
+import GidaSilme from './components/services/GidaSilme';
+import IstahKap from './components/services/IstahKap';
 
 function App() {
   return (
@@ -30,9 +32,9 @@ function App() {
           <Route path="/hizmetlerimiz" exact component={MServices} />
           <Route path="/iletisim" exact component={ContactUs} />
           <Route path="/Blog" exact render={() => <Blog customHeader="Bizden Görüntüler" />} />
-          <Route path="/hizmetlerimiz/gida-silme" exact render={() => <SService header="Gıda Silme" />} />
-          <Route path="/hizmetlerimiz/istah-kapama" exact render={() => <SService header="İştah Kapama" />} />
-          <Route path="/hizmetlerimiz/sigara-birakma" exact render={() => <SService header="Sigara bırakma" />} />
+          <Route path="/hizmetlerimiz/gida-silme" exact  render={() => <GidaSilme header="Gıda Silme" />} />
+          <Route path="/hizmetlerimiz/istah-kapama" exact  render={() => <IstahKap header="İştah Kapama" />} />
+          <Route path="/hizmetlerimiz/bagimlilik-terapisi" exact render={() => <Bagimlilik header="Bağımlılık Terapisi" />} />
         </Switch>
       </Router>
     </>

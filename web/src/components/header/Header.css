@@ -4,7 +4,7 @@ body {
   overflow-x: hidden;
 }
 
-.head {
+.head { 
   background: rgb(253, 240, 228);
   padding: 5px 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -30,7 +30,8 @@ body {
 }
 
 .navbar {
-  background: linear-gradient(to left, #ff3833, #ff6141, #ff884b);
+  /* background: linear-gradient(to left, #ff3833, #ff6141, #ff884b); */
+  background-color: #ff8110;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 0;
 }
@@ -106,7 +107,7 @@ body {
 
 .dropdown:hover .d_content {
   display: block;
-  background-color: #ff6141;
+  background-color: #ff8110;
 }
 
 .dropdown:hover .d_content a {

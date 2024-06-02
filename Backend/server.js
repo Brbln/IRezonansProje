@@ -14,7 +14,6 @@ app.use("/api/contacts",require("./Routes/contactRoutes"));
 app.use("/api/users",require("./Routes/userRoutes"));
 app.use("/api/admins",require("./Routes/adminRoutes"));
 app.use("/api/randevus",require("./Routes/randevuRoutes"));
-app.use("/api/videos",require("./Routes/videoRoutes"));
 app.use(errorHandler);
 
 const options = {

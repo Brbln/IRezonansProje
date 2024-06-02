@@ -21,7 +21,7 @@
     border-radius: 10px;
 }
 
-.contact .cont_inf { 
+.contact .cont_inf {
     flex: 1;
     padding: 20px;
     text-align: left;
@@ -30,7 +30,7 @@
     border-radius: 5px;
     background-color: rgb(254, 248, 242);
 }
- 
+
 
 .cont_inf .text {
     display: flex;
@@ -45,18 +45,21 @@
     text-align: center;
     color: #ff6141;
 }
- 
+
 .bar b {
     text-align: left;
-    padding: 15px; 
-} 
+    padding: 15px;
+}
+
 .cont_inf p {
     display: flex;
     padding: 10px 15px;
-} 
-.text{
+}
+
+.text {
     margin: 10px;
 }
+
 .text .par {
     margin: 13px 0;
     font-size: 16px;
@@ -70,10 +73,11 @@
     margin-top: 10px;
 }
 
-.par .post { 
+.par .post {
     margin-top: 32px;
 }
-.par .adr{
+
+.par .adr {
     margin-top: 35px;
 }
 
@@ -84,62 +88,98 @@
     margin-bottom: 50px;
 }
 
-.blog img {
-    width: 50%;
+.blog h2 {
+    padding-bottom: 25px;
+}
+
+.blogImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    transition: transform 0.4s ease;
+    border: 2px solid #ff884b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+}
+
+.blogImg:hover {
+    transform: scale(1.2);
+}
+
+.gallery {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
 }
 
 /* -----------------Randevu------------------ */
 
-.randevu .foto{ 
-    background-color: rgb(255, 255, 255,0.4);
+.randevu .foto {
+    background-color: rgb(255, 255, 255, 0.4);
     display: flex;
 }
-.randevu img{
+
+.randevu img {
     width: 250px;
 }
+
 .bg-photo {
     position: relative;
     background-image: url('./images/slider/t.jpeg');
     background-size: 700px;
-    background-position:200px 50px;
+    background-position: 200px 50px;
     background-repeat: no-repeat;
 }
-.randhead{
+
+.randhead {
     text-align: left;
     padding: 70px 30px;
     max-width: 500px;
 }
-.randhead h2{
-font-size: 40px;
-    color: rgb(255,0,0,.8);
+
+.randhead h2 {
+    font-size: 40px;
+    color: rgb(255, 0, 0, .8);
 }
-.randhead h1{
-    color: rgb(0, 0, 0,0.9);
-    margin:40px 0;
+
+.randhead h1 {
+    color: rgb(0, 0, 0, 0.9);
+    margin: 40px 0;
     font-size: 23px;
 }
-.randhead p{
-    color:rgb(0, 0, 0 ,);
+
+.randhead p {
+    color: rgb(0, 0, 0, );
     margin: 30px 0;
     font-size: 21px;
-} 
-.randevu .time{
-    color: rgb(255,0,0,.9);
+}
+
+.randevu .time {
+    color: rgb(255, 0, 0, .9);
     margin: 10px 0;
 }
 
-.rand{ 
+.rand {
     max-width: 600px;
     margin: 20px auto;
     margin-left: 40px;
     padding: 20px;
     border-radius: 10px;
 }
+
 .rand label {
     font-size: 19px;
     margin: 15px 0;
     display: block;
 }
+
 .row {
     display: flex;
     margin: 10px 0;
@@ -165,7 +205,7 @@ button {
     border: 1px solid #ccc;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
-    
+
 }
 
 input[type="text"]:focus,
@@ -174,7 +214,7 @@ textarea:focus,
 input[type="date"]:focus {
     border-color: #ff884b;
     outline: none;
-    
+
 }
 
 button {
@@ -197,124 +237,176 @@ textarea {
 /*--------------------Responsive Tasarım------------------- */
 @media screen and (max-width: 768px) {
 
-/*----------------iletişim-------------- */
- 
-.cont_inf i { 
+    /*----------------iletişim-------------- */
+
+    .cont_inf i {
+        margin: 15px 0;
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    .bar b {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .cont_inf p {
+        display: flex;
+        padding: 10px 15px;
+    }
+
+    .text .par {
+        margin: 10px 0;
+    }
+
+    .contact .container {
+        display: block;
+    }
+
+    .contact .cont_inf {
+        margin: 30px 0;
+        padding: 10px 20px;
+        height: 280px;
+    }
+
+    .text {
+        margin: 0;
+    }
+
+    .bar b {
+        text-align: left;
+        padding: 16px 5px;
+    }
+
+    .cont_inf p {
+        padding: 10px 0;
+    }
+
+    .text .par {
+        margin: 12px 3px;
+        font-size: 14px;
+    }
+
+    .par .adr {
+        padding: 0px;
+        text-align: justify;
+    }
+
+    .par .tel {
+        padding: 13px 9px;
+        padding-bottom: 0px;
+    }
+
+    .par .post {
+        padding: 5px 10px;
+        padding-bottom: 17px;
+    }
+
+    /*---------------Randevu--------------- */
+
+    .randevu .foto {
+        display: block;
+        background-color: rgb(255, 255, 255, 0.7);
+    }
+
+    .bg-photo {
+        background-size: 350px;
+        background-position: 0px 100px;
+    }
+
+    .randhead {
+        text-align: center;
+        padding: 20px 12px;
+    }
+
+    .randhead h2 {
+        font-size: 26px;
+    }
+
+    .randhead h1 {
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .randhead p {
+        margin: 20px 0;
+        font-size: 19px;
+    }
+
+    .randevu .time {
+        margin: 10px 0;
+    }
+
+    .rand {
+        max-width: 600px;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .rand label {
+        font-size: 15px;
+        margin: 10px 0;
+        display: block;
+    }
+
+    .row {
+        display: block;
+        margin: 0px 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    input[type="date"],
+    button {
+        font-size: 15px;
+        height: 40px;
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 300px;
+    }
+
+    textarea {
+        height: 150px;
+    }
+    
+/*---------------Blog--------------- */
+.blog {
     margin: 15px 0;
-    font-size: 20px;
-    margin-right: 5px; 
-}
-
-.bar b {
     text-align: center;
-    padding: 15px;
+    margin-bottom: 50px;
 }
 
-.cont_inf p {
-    display: flex;
-    padding: 10px 15px; 
-}  
-.text .par {
-    margin: 10px 0;
+.blog h2 {
+    padding-bottom: 25px;
 }
-.contact .container{
+
+.blogImg {
+    width: 100%;
+    height: auto;
     display: block;
-}
-.contact .cont_inf {
-    margin: 30px 0;
-    padding: 10px 20px;
-    height: 280px;
-}
- 
-.text{
-    margin: 0;
-}
-.bar b {
-    text-align: left;
-    padding: 16px 5px;
-}
-
-.cont_inf p { 
-    padding: 10px 0;
-}
-.text .par {
-    margin: 12px 3px;
-    font-size: 14px;
-}
-.par .adr{
-    padding: 0px  ;
-    text-align: justify;
-}
-.par .tel {
-    padding: 13px 9px;
-    padding-bottom: 0px;
-}
-.par .post{
-    padding: 5px 10px;
-    padding-bottom: 17px;
-}
-
-/*---------------Randevu--------------- */
-
-.randevu .foto{
-    display: block;
-    background-color: rgb(255, 255, 255,0.7);
-}
- 
-.bg-photo { 
-    background-size: 350px;
-    background-position:0px  100px ;  
-}
-.randhead{
-    text-align: center;
-    padding: 20px 12px; 
-}
-.randhead h2{
-font-size: 26px; 
-}
-.randhead h1{ 
-    margin:20px 0;
-    font-size: 20px;
-}
-.randhead p{ 
-    margin: 20px 0;
-    font-size: 19px;
-} 
-.randevu .time{ 
-    margin: 10px 0;
-}
-
-.rand{
-    max-width: 600px;
-    margin: 0; 
-    padding: 10px; 
-}
-.rand label {
-    font-size: 15px;
-    margin: 10px 0;
-    display: block;
-}
-.row {
-    display: block;
-    margin: 0px 0;
-}
- 
-input[type="text"],
-input[type="email"],
-textarea,
-input[type="date"],
-button {
-    font-size: 15px; 
-    height: 40px;
     margin-bottom: 10px;
-    padding: 5px;  
-    width: 300px;
-}
-textarea {
-    height: 150px; 
+    transition: transform 0.4s ease;
+    border: 2px solid #ff884b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
 }
 
+.blogImg:hover {
+    transform: scale(1.2);
+}
 
+.gallery {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+}
 
 
 }

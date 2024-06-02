@@ -2,8 +2,8 @@
 import React from "react";
 
 const Head = () => {
-  const phone = "+905539879830";
-  const email = "info@example.com";
+  const phone = "+905308939288";
+  const email = "bilgi@ilkadimrezonans.com";  
   const phoneClick = () => {
     window.location.href = `tel:${phone}`;
   };
@@ -12,15 +12,15 @@ const Head = () => {
   };
   return (
     <>
-      <section className='head'>
-        <div className='container d_flex'>
+      <section className='head '>
+        <div className='container d_flex '>
           <i className='fa fa-phone' onClick={phoneClick}>
             <label>+90 (530) 893 9288</label>
           </i>
           <i className='fas fa-envelope' onClick={handleEmailClick}>
             <label>{email}</label>
           </i>
-        </div>
+          </div>
       </section>
     </>
   );

@@ -1,13 +1,13 @@
 import React, { useState,useRef } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import logo from "../images/log.png";
 import './Header.css';
 
 const Navbar = () => {
-    const navRef=useRef();
-    const showNavbar=()=>{
-        navRef.current.classList.toggle("navlink")
-    }
+    // const navRef=useRef();
+    // const showNavbar=()=>{
+    //     navRef.current.classList.toggle("navlink")
+    // }
     const [MobileMenu, setMobileMenu] = useState(false);
     return (
         <>
@@ -31,7 +31,7 @@ const Navbar = () => {
                                 <div className="d_content">
                                     <Link to='/hizmetlerimiz/istah-kapama'>İştah Kapama</Link>
                                     <Link to='/hizmetlerimiz/gida-silme'>Gıda Silme</Link>
-                                    <Link to='/hizmetlerimiz/sigara-birakma'>Sigara Bırakma</Link>
+                                    <Link to='/hizmetlerimiz/bagimlilik-terapisi'>Bağımlılık Terapisi</Link>
                                 </div>
                             </div>
                         </li>

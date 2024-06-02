@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import img from "../images/slider/2.jpg"
-import img1 from "../images/slider/1.jpg"
-import img3 from "../images/slider/3.jpg"
+import img from "../images/img/ista.jpg"
+import img1 from "../images/img/gida2.jpg"
+import img3 from "../images/img/bag3.jpg"
 
 export const Services = () => {
     return (
@@ -15,10 +15,10 @@ export const Services = () => {
                         <img src={img} alt="" />
                         <h1>İştah Kapama </h1>
                         <p>
-                            Zayıflama, sağlıklı bir yaşam tarzının ve vücut ağırlığının kontrol altında tutulmasının önemli
-                            bir unsuru olarak karşımıza çıkar. Zayıflama, dengeli beslenme, düzenli egzersiz ve sağlıklı
-                            alışkanlıkların bir kombinasyonunu içerir. Vücut ağırlığını kontrol etmek, genel sağlık durumunu
-                            iyileştirebilir ve bir dizi olumlu etki yaratabilir
+                            İştah kontrolünüzü sağlayabilirsiniz. Karbonhidrat içeren gıdalara karşı (ekmek, pasta, baklava, simit, börek,
+                            tüm sütlü tatlılar, çikolata, hamur, unlu gıdalar) iştahınızı kesebilirsiniz. Yeme isteği hissetmeden rahat bir
+                             şekilde kilo verebilirsiniz. 
+
                         </p>
                         <Link to="/hizmetlerimiz/istah-kapama">
                         <button className='button'>Devamını Oku</button>
@@ -28,10 +28,9 @@ export const Services = () => {
                         <img src={img1} alt="" />
                         <h1>Gıda Silme </h1>
                         <p>
-                            Zayıflama, sağlıklı bir yaşam tarzının ve vücut ağırlığının kontrol altında tutulmasının önemli
-                            bir unsuru olarak karşımıza çıkar. Zayıflama, dengeli beslenme, düzenli egzersiz ve sağlıklı
-                            alışkanlıkların bir kombinasyonunu içerir. Vücut ağırlığını kontrol etmek, genel sağlık durumunu
-                            iyileştirebilir ve bir dizi olumlu etki yaratabilir
+                        Rezonans terapisi, Samsun zayıflama hizmeti, bedenin biyoelektrik ve elektromanyetik alanlarını 
+                        kullanarak vücudu dengelemeyi amaçlayan bir alternatif tıp yöntemidir. Bu terapinin bir uygulama
+                         şekli, özellikle gıda düşkünlüğü ve iştah kontrolü ile ilgili sorunları ele almak için kullanılır.
                         </p>                        
                         <Link to="/hizmetlerimiz/gida-silme">
                         <button className='button'>Devamını Oku</button>
@@ -39,14 +38,13 @@ export const Services = () => {
                     </div>
                     <div className="s_row">
                         <img src={img3} alt="" />
-                        <h1>Sigara Bırakma </h1>
+                        <h1>Bağımlılık Terapisi </h1>
                         <p>
-                            Zayıflama, sağlıklı bir yaşam tarzının ve vücut ağırlığının kontrol altında tutulmasının önemli
-                            bir unsuru olarak karşımıza çıkar. Zayıflama, dengeli beslenme, düzenli egzersiz ve sağlıklı
-                            alışkanlıkların bir kombinasyonunu içerir. Vücut ağırlığını kontrol etmek, genel sağlık durumunu
-                            iyileştirebilir ve bir dizi olumlu etki yaratabilir
+                        Kişinin maddenin elektromanyetik frekansı rezonans cihazı ile ters çevrilerek geri gönderilir.
+                         Maddenin frekansları tamamen silinerek, kişideki tanınmışlık durumları ortadan kaldırılır. 
+                         Bağımlılıkları ortadan kalkar.
                         </p>                        
-                        <Link to="/hizmetlerimiz/sigara-birakma">
+                        <Link to="/hizmetlerimiz/bagimlilik-terapisi">
                         <button className='button'>Devamını Oku</button>
                         </Link>
                     </div>                    
