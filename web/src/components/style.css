@@ -96,7 +96,7 @@
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 1    0px;
     transition: transform 0.4s ease;
     border: 2px solid #ff884b;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -195,7 +195,7 @@ input[type="text"],
 input[type="email"],
 textarea,
 input[type="date"],
-button {
+.button {
     font-size: 18px;
     width: 100%;
     height: 40px;
@@ -217,7 +217,7 @@ input[type="date"]:focus {
 
 }
 
-button {
+.button {
     background-color: #ff884b;
     color: #fff;
     cursor: pointer;
@@ -226,7 +226,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.button:hover {
     background-color: rgb(255, 97, 65);
 }
 
@@ -237,69 +237,47 @@ textarea {
 /*--------------------Responsive Tasarım------------------- */
 @media screen and (max-width: 768px) {
 
-    /*----------------iletişim-------------- */
 
     .cont_inf i {
         margin: 15px 0;
         font-size: 20px;
         margin-right: 5px;
-    }
-
-    .bar b {
-        text-align: center;
-        padding: 15px;
-    }
-
-    .cont_inf p {
-        display: flex;
-        padding: 10px 15px;
-    }
-
-    .text .par {
-        margin: 10px 0;
-    }
-
+    } 
+ 
+ 
     .contact .container {
         display: block;
     }
 
     .contact .cont_inf {
-        margin: 30px 0;
-        padding: 10px 20px;
-        height: 280px;
+        margin: 30px 0; 
+        padding: 10px 20px;  
     }
 
     .text {
         margin: 0;
     }
-
-    .bar b {
-        text-align: left;
-        padding: 16px 5px;
-    }
-
     .cont_inf p {
         padding: 10px 0;
     }
 
     .text .par {
-        margin: 12px 3px;
+        margin: 10px 3px;
         font-size: 14px;
     }
 
     .par .adr {
-        padding: 0px;
-        text-align: justify;
+        padding: 0px; 
+        margin-left: 7px;
     }
 
     .par .tel {
-        padding: 13px 9px;
+        padding: 15px 9px;
         padding-bottom: 0px;
     }
 
     .par .post {
-        padding: 5px 10px;
-        padding-bottom: 17px;
+        padding: 20px 10px; 
     }
 
     /*---------------Randevu--------------- */
@@ -311,12 +289,12 @@ textarea {
 
     .bg-photo {
         background-size: 350px;
-        background-position: 0px 100px;
+        background-position: 50% 100px;
     }
 
     .randhead {
         text-align: center;
-        padding: 20px 12px;
+        padding: 20px 10%;
     }
 
     .randhead h2 {
@@ -340,7 +318,7 @@ textarea {
     .rand {
         max-width: 600px;
         margin: 0;
-        padding: 10px;
+        padding: 15px;
     }
 
     .rand label {
@@ -363,49 +341,119 @@ textarea {
         height: 40px;
         margin-bottom: 10px;
         padding: 5px;
-        width: 300px;
+        width: 100%;
     }
-
+    .button{
+        width: 97%;
+    }
     textarea {
         height: 150px;
+        width: 97%;
+
     }
     
 /*---------------Blog--------------- */
-.blog {
-    margin: 15px 0;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
 .blog h2 {
     padding-bottom: 25px;
 }
-
-.blogImg {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
-    transition: transform 0.4s ease;
-    border: 2px solid #ff884b;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.blogImg { 
+    margin-bottom: 20px; 
+    border: 1.2px solid #ff884b; 
+    border-radius: 10%;
+}
+.blogImg:hover {
+    transform: scale(1.07);
     border-radius: 5%;
 }
-
-.blogImg:hover {
-    transform: scale(1.2);
-}
-
 .gallery {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 15px;
+    display: block; 
+}
 }
 
-.gallery img {
-    width: 100%;
-    height: 100%;
+/*------------------Tablet---------------------*/
+
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  
+.randevu .foto { 
+    display: block;
+}
+.randevu{
+    left: 40%;
+} 
+.randevu img {
+    width: 250px;
+}
+
+.bg-photo { 
+    background-size: 700px;
+    background-position: 180px 20px; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="date"],
+.button { 
+    font-size: 19px; 
+    height: 50px;    
+
+}
+.button { 
+    font-size: 18px;  
+    width: 97%;
+} 
+textarea {
+    height: 170px;
+    width: 97%;
+}
+.blog { 
+    margin-bottom: 100px;
+} 
+.gallery {  
+    gap: 50px;
+} 
+/*-------------------------*/
+
+.contact .container {
+    display: block;
+} 
+.location { 
+    margin-right: 0px;
+}
+
+.inf {
+    margin-top: 70px;
+    margin-bottom: 120px;
+}
+
+.location iframe { 
+    height: 200px; 
+    border-radius: 5px; 
+    padding-bottom: 40px;
+}
+
+.contact .cont_inf { 
+    padding:10px 20px; 
+    height: 260px;   
+}
+ 
+.cont_inf i { 
+    margin: 12px;
+    font-size: 30px;
+    margin-right: 10px;  
+}
+ 
+.cont_inf p { 
+    padding: 5px 10px;
+}
+.text {
+    margin: 20px;
+}
+.text .par {
+    margin: 13px 0; 
+}
+.par .adr {
+    margin-top: 32px;
 }
 
 

@@ -11,8 +11,7 @@ export const About = () => {
           <div className="text">
             <div className="parag">
               <p>
-              Samsun'da sağlıklı kilo vermeniz için yola çıktık binlerce danışanımıza hizmet verdik
-               ve yolumuza bu doğrultuda devam ediyoruz.</p>
+              Samsun'da sağlıklı kilo vermeniz için yola çıktık binlerce danışanımıza hizmet verdik ve yolumuza bu doğrultuda devam ediyoruz.</p>
               <br />
               {/* <p>
                 Sağlıklı bir diyet, vücudun ihtiyaç duyduğu temel besinleri sağlamalı ve aynı zamanda kalori alımını

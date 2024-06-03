@@ -4,7 +4,7 @@ body {
   overflow-x: hidden;
 }
 
-.head { 
+.head {
   background: rgb(253, 240, 228);
   padding: 5px 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -29,25 +29,35 @@ body {
   transition: 0.1s;
 }
 
+/*-------------Navbar---------------*/
 .navbar {
-  /* background: linear-gradient(to left, #ff3833, #ff6141, #ff884b); */
   background-color: #ff8110;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 0;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar .width {
+  width: 180px;
+  height: 185px;
+  margin-left: 30px;
+}
+
+.navbar .width img {
+  width: 100%;
 }
 
 .navlink ul {
   padding-right: 16px;
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 .navlink ul li {
   list-style: none;
-  display: inline-block;
   padding: 10px 0;
   padding-right: 45px;
-  position: static;
 }
 
 .navlink ul li a {
@@ -55,6 +65,7 @@ body {
   text-decoration: none;
   color: #fff;
   position: relative;
+
 }
 
 .navlink ul li a:hover {
@@ -79,35 +90,29 @@ body {
   width: 100%;
 }
 
-.navbar .width { 
-  width: 180px;
-  height: 185px;
-  margin-left: 35px;
-}
-
-.navbar .width img {
-  width: 100%;
-}
 
 /* Dropdown styles */
 .dropdown {
   position: relative;
-  display: inline-block;
-  z-index: 2;
 }
 
-.d_content {
-  width: 200px;
+.dropdown .d_content {
+  width: 180px;
   display: none;
   position: absolute;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 3;
-  text-align: left;
+  z-index: 1;
 }
 
 .dropdown:hover .d_content {
   display: block;
   background-color: #ff8110;
+}
+
+.d_content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
 .dropdown:hover .d_content a {
@@ -124,22 +129,31 @@ body {
   background-color: #ff6141;
 }
 
-.d_content a {
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
 .toggle {
   display: none;
   position: absolute;
-  top: 15px;
-  right: 15px;
-  color: #000;
-  font-size: 20px;
-  cursor: pointer;
+  top: 25px;
+  right: 0px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
 }
 
+.hzmBtn { 
+  background: none;
+  border: none;
+  text-align: left;
+  margin: 0;
+  width: 220px;
+}
+.btnHiz{
+  display: none;
+}
+
+
+/*-------Responsive-----------*/
 @media screen and (max-width: 768px) {
   .head {
     overflow-x: hidden;
@@ -152,23 +166,121 @@ body {
   }
 
   .head i {
-    font-size: 15px;
-    margin: 5px 10px;
-  }
-  .navbar ul {
-    padding-top: 30px;
-  }
-
-  .navbar .width img {
-    display: none;
-  }
-
-  .navbar .navlink {
-    display: none;
+    font-size: 14px;
+    margin: 6px 5px;
   }
 
   .h2head,
   .h1head {
     text-align: left;
   }
+
+  /*-------Navbar-------*/
+
+  .navbar .width img {
+    display: none;
+  }
+
+  .toggle {
+    display: block;
+    margin-right: 20px;
+    color: rgb(255, 255, 255, 0.9);
+  }
+
+  .navlink .toggle {
+    top: 15px;
+    right: auto;
+    left: 15px;
+  }
+
+  .navlink {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #ff8110;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-out;
+    z-index: 999;
+    padding-top: 70px;
+  }
+
+  .navlink.show {
+    transform: translateX(0);
+  }
+
+  .navlink ul {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 30px;
+  }
+
+  .navlink ul li {
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  }
+
+  .navlink ul li a {
+    font-size: 18px;
+  }
+
+  .navlink ul li a:hover::after {
+    width: 0%;
+  }
+
+  .navlink ul li .d_content {
+    padding-left: 20px;
+  }
+
+  .navlink ul li .d_content li {
+    padding: 5px 0;
+    font-size: 15px;
+    list-style: none;
+  }
+
+  .btnHiz {
+    display: block;
+  }
+  .hzmBtn i {
+    margin-left: 30px;
+  }
+
+  .dropdown {
+    display: none;
+  }
+}
+
+/*----------Tablet-------------*/
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+
+  .head .container {
+    max-width: 85%;
+  } 
+  .navbar .width img {
+    width: 110px;
+    margin: 30px 0; 
+    margin-right: 20px; 
+  } 
+  .navbar .width{
+    margin: 0;
+  }
+  .navlink ul li a{ 
+    padding-left: 3px;
+    margin: 0;
+    font-size: 15px;
+  } 
+   
+.navlink ul { 
+  display: flex; 
+
+}
+
+.navlink ul li {
+  list-style: none;
+  padding: 10px 0; 
+  margin-right: 20px; 
+}  
 }

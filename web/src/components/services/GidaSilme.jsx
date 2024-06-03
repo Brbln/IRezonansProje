@@ -15,19 +15,9 @@ const GidaSilme = ({ header }) => {
                 <div className="parag">
                     <p> İştah kontrolünüzü sağlayabilirsiniz. Karbonhidrat içeren gıdalara karşı (ekmek, pasta, baklava,simit,börek, tüm sütlü tatlılar, çikolata, hamur, unlu gıdalar) iştahınızı kesebilirsiniz. 
                         Yeme isteği hissetmeden rahat bir şekilde kilo verebilirsiniz.</p>
-                    {/* <p>Eğer yukarıdaki adımlar sorununuzu çözmezse, sorunun daha karmaşık olabileceğini ve
-                        Microsoft Destek veya bilgisayarınızın üreticisi tarafından sunulan destek kaynaklarından yardım almanız önerilir.</p> */}
-
+                    
                     <h2 className='h2head'> {header} ile etkilenecek durumlar nelerdir?</h2>
-                    {/* <p>Eğer yukarıdaki adımlar sorununuzu çözmezse, sorunun daha karmaşık olabileceğini ve daha fazla incelemenin
-                        gerekebileceğini gösterir. Bu durumda, Microsoft Destek veya bilgisayarınızın üreticisi tarafından sunulan
-                        destek kaynaklarından yardım almanız önerilir.Eğer yukarıdaki adımlar sorununuzu çözmezse, sorunun daha karmaşık
-                        olabileceğini ve daha fazla incelemenin gerekebileceğini gösterir. Bu durumda,daha fazla incelemenin
-                        gerekebileceğini gösterir. Bu durumda, Microsoft Destek veya bilgisayarınızın üreticisi tarafından sunulan
-                        destek kaynaklarından yardım almanız önerilir.Eğer yukarıdaki adımlar sorununuzu çözmezse, sorunun daha karmaşık
-                        olabileceğini ve daha fazla incelemenin gerekebileceğini gösterir. Bu durumda,
-                        Microsoft Destek veya bilgisayarınızın üreticisi tarafından sunulan destek kaynaklarından yardım almanız önerilir.</p>
-                    <p>Eğer yukarıdaki adımlar sorununuzu çözmezse, sorunun daha karmaşık olabileceğini ve daha fazla incelemenin
+                    {/*<p>Eğer yukarıdaki adımlar sorununuzu çözmezse, sorunun daha karmaşık olabileceğini ve daha fazla incelemenin
                         gerekebileceğini gösterir. Bu durumda, Microsoft Destek veya bilgisayarınızın üreticisi tarafından sunulan
                         destek kaynaklarından yardım almanız önerilir.Eğer yukarıdaki adımlar sorununuzu çözmezse, sorunun daha karmaşık
                         olabileceğini ve daha fazla incelemenin gerekebileceğini gösterir. Bu durumda,</p> */}

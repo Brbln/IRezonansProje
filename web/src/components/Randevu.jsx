@@ -50,8 +50,8 @@ const Randevu = () => {
                     <div className="foto">
                     <div className="randhead">
                         <h2>Ön randevu Kaydı Yapabilirsiniz</h2>
-                        <h1>Gönderdiğiniz iletişim bilgileri aracılığıyla en kısa sürede sizlerle iletişime geçeceğiz. Beklemede kalın.</h1>
-                        <p>Gönderdiğiniz iletişim bilgileri aracılığıyla en kısa sürede sizlerle iletişime geçeceğiz.</p>
+                        <h1>Gönderdiğiniz iletişim bilgileri aracılığıyla en kısa sürede sizlerle iletişime geçeceğiz.</h1>
+                        <p> Beklemede kalın.</p>
                         <p className='time'>Pzt - Cmt : 09:00 - 18:00 </p>
                         <p className='time'>Pazar : Kapalı</p>
                     </div>
@@ -79,7 +79,7 @@ const Randevu = () => {
                             </div>
                             <label>Ekstra Mesajınız</label>
                             <textarea name="text" value={formData.text} onChange={handleChange} placeholder="Mesajınız"></textarea>
-                            <button type="submit">Gönder</button>
+                            <button className="button" type="submit">Gönder</button>
                         </form>
                     </div>
                 </div>
