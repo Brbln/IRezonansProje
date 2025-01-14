@@ -120,17 +120,17 @@
 }
 
 /* -----------------Randevu------------------ */
-
+ 
 .randevu .foto {
     background-color: rgb(255, 255, 255, 0.4);
     display: flex;
-}
-
+    margin-left: 10%;
+} 
 .randevu img {
     width: 250px;
 }
 
-.bg-photo {
+.bg-photo { 
     position: relative;
     background-image: url('./images/slider/t.jpeg');
     background-size: 700px;
@@ -140,7 +140,7 @@
 
 .randhead {
     text-align: left;
-    padding: 70px 30px;
+    padding: 70px 50px;
     max-width: 500px;
 }
 
