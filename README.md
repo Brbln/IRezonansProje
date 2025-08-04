@@ -1,4 +1,4 @@
-# IrezonasnProje
+# IRezonansProje
 
 IRezonansProje, modern ve kullanıcı dostu bir blog sitesi uygulamasıdır.  
 React kullanılarak geliştirilmiş, içerik paylaşımı ve yönetimi için tasarlanmış sade ve performanslı bir frontend projesidir.
