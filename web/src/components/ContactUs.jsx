@@ -39,7 +39,7 @@ const ContactUs = () => {
                             <section className='par'>
                                 <p className='tel'>+90 (530) 893 9288</p>
                                 <p className='post'>bilgi@ilkadimrezonans.com</p> 
-                                <p className='adr'>Kale Mah. Öğretmenevi karşısı, 19 Mayıs Blv. Yuvam Apt B Blok Kat:3, 55070 İlkadım/Samsun</p>
+                                <p className='adr'>Kale Mah., 19 Mayıs Blv., 55070 İlkadım/Samsun</p>
                             </section>
                         </div>
                     </section>
