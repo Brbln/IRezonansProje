@@ -2,7 +2,7 @@
 import React from "react";
 
 const Head = () => {
-  const phone = "+905308939288";
+  const phone = "+90555555555";
   const email = "bilgi@ilkadimrezonans.com";  
   const phoneClick = () => {
     window.location.href = `tel:${phone}`;
