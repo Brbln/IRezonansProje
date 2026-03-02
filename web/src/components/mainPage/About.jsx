@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import img from "../images/slider/3.jpg"
 
 export const About = () => {

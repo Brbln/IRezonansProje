@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import   { useState } from 'react';
 import img from "../images/slider/12.jpg";
 
 const Header2 = ({ customHeader, customImg }) => {

@@ -1,5 +1,4 @@
-import React from 'react'
-import Header2 from '../mainPage/Header2'
+ import Header2 from '../mainPage/Header2'
 import "../mainPage/Home.css"
 import Footer from '../footer/Footer'
 import Randevu from '../Randevu'

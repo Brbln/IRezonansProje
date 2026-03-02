@@ -1,4 +1,4 @@
-import React from 'react'; 
+ 
 import Header2 from './mainPage/Header2';
 import img from './images/blog/foto1.jpg';
 import img2 from './images/blog/foto2.jpg';

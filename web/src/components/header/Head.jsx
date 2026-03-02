@@ -1,5 +1,4 @@
-// Head.js
-import React from "react";
+
 
 const Head = () => {
   const phone = "+90555555555";
