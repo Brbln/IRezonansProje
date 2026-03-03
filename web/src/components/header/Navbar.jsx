@@ -18,6 +18,7 @@ const Navbar = () => {
                 <div className='width'>
                     <Link to="/" onClick={handleLinkClick}>
                         <img src={logo} alt='' />
+                        <label>İLKADIM REZONANS</label>
                     </Link>
                 </div>
                 <div className={`navlink ${MobileMenu ? "show" : ""}`}>

@@ -1,24 +1,19 @@
 
 
 const Head = () => {
-  const phone = "+90555555555";
-  const email = "bilgi@ilkadimrezonans.com";  
-  const phoneClick = () => {
-    window.location.href = `tel:${phone}`;
-  };
-  const handleEmailClick = () => {
-    window.location.href = `mailto:${email}`;
-  };
+   
   return (
     <>
       <section className='head '>
         <div className='container d_flex '>
-          <i className='fa fa-phone' onClick={phoneClick}>
-            <label>+90 (530) 893 9288</label>
-          </i>
-          <i className='fas fa-envelope' onClick={handleEmailClick}>
-            <label>{email}</label>
-          </i>
+           <a href="tel:+905539879830" className="contactItem">
+          <i className="fa fa-phone"></i>
+          <span>+90 (553) 987 9830</span>
+        </a>
+           <a href="mailto:bilgi@irezonans.com" className="contactItem">
+          <i className="fas fa-envelope"></i>
+          <span>bilgi@irezonans.com</span>
+        </a>
           </div>
       </section>
     </>

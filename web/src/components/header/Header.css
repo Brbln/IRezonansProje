@@ -3,30 +3,39 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-
 .head {
   background: rgb(253, 240, 228);
   padding: 5px 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 5px;
 }
 
-.head i {
+.head .container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 40px;
+}
+
+/* Link yapısı */
+.head a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
-  margin-left: 40px;
-}
-
-.head label {
-  margin-left: 5px;
   font-size: 13px;
+  transition: 0.2s ease;
 }
 
-.head i:hover {
+.head a:hover {
   background-image: linear-gradient(to left, #ff3833, #ff6141, #ff884b);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  transition: 0.1s;
+}
+
+.head i {
+  font-size: 14px;
 }
 
 /*-------------Navbar---------------*/
@@ -46,6 +55,12 @@ body {
 
 .navbar .width img {
   width: 100%;
+}
+.navbar .width label {
+  display: none;
+  font-size: 20px;
+ color: rgb(255, 255, 255, 0.9);
+  margin-top: 55px; 
 }
 
 .navlink ul {
@@ -155,19 +170,24 @@ body {
 
 /*-------Responsive-----------*/
 @media screen and (max-width: 768px) {
-  .head {
-    overflow-x: hidden;
-    flex-direction: column;
-    align-items: flex-start;
+    .head .container {
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;   
+    align-items: center;
+    gap: 20px;
+    padding-left: 0;
   }
-
   .head .container {
     max-width: 100%;
   }
-
+.head a{
+  font-size: 12px;
+  gap:2;
+}
   .head i {
     font-size: 14px;
-    margin: 6px 5px;
+    margin: 6px 15px;
   }
 
   .h2head,
@@ -176,11 +196,18 @@ body {
   }
 
   /*-------Navbar-------*/
-
-  .navbar .width img {
+.navbar .width {
+  width: 700px; 
+  margin-top: 48px;
+  margin-left: 20px; 
+  font-weight: bold;
+}
+.navbar .width img {
     display: none;
   }
-
+.navbar .width label {
+  display: block;
+}
   .toggle {
     display: block;
     margin-right: 20px;
@@ -251,6 +278,13 @@ body {
   .dropdown {
     display: none;
   }
+  .navlink {
+  pointer-events: none;
+}
+
+.navlink.show {
+  pointer-events: auto;
+}
 }
 
 /*----------Tablet-------------*/
