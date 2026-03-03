@@ -171,13 +171,17 @@ body {
 /*-------Responsive-----------*/
 @media screen and (max-width: 768px) {
   .head .container {
-    display: flex; 
-    justify-content: center;   
-    align-items: center;   
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-left: 0; 
+  max-width: 100%;
   }  
   .head i {
     font-size: 14px;
-    margin: 6px 15px;
+    margin: 6px 10px;
   }
  
 
